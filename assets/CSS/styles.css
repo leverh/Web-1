@@ -1,49 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Lato:wght@700&family=Lora:wght@600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-  }header{
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Arimo', sans-serif;
+    color: #545454;
+    font-weight: 300;
+  }
+
+/* RE-USABLE STUFF */
+
+  h1, h2, h3 {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    color: #545454;
+}
+
+  header{
     background-color: black;
-  }li{
+  }
+
+  li{
     list-style: none;
-  }a{
+  }
+
+  a{
     color: white;
     text-decoration: none;
   }
 
   .container{
-    max-width: 1224px;
+    max-width: 122.4rem;
     width: 90%;
     margin: 0 auto;
   }
 
   .navbar{
-    min-height: 70px;
+    min-height: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }.nav-branding{
+  }
+
+  .nav-branding{
     font-size: 2rem;
-  }.nav-menu{
+  }
+
+  .nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
-  }.nav-link{
+    gap: 6rem;
+  }
+
+  .nav-link{
     transition: 0.3s ease-out;
-  }.nav-link:hover{
+  }
+
+  .nav-link:hover{
     color: dodgerblue;
-  }.hamburger{
+  }
+
+  .hamburger{
     display: none;
     cursor: pointer;
-  }.bar{
+  }
+
+  .bar{
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 2.5rem;
+    height: .3rem;
+    margin: .5rem auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: white;
   }
+
+/*  */
+
+#hero {
+    margin-top: 7rem;
+}
+
+.hero-image {
+    height: 70rem;
+
+}
+
+/* MEDIA QUERIES*/
 
   @media(max-width:1024px){
     .hamburger{
