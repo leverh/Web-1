@@ -26,17 +26,24 @@
     color: #545454;
 }
 
+/* HEADER */
+
   header{
-    background-color: black;
+    background-color: #f8f9e9;
+    position: sticky;
+    top: 0;
   }
 
   li{
     list-style: none;
+    
   }
 
   a{
     color: white;
     text-decoration: none;
+    color: #545454;
+    font-size: 1.5rem;
   }
 
   .container{
