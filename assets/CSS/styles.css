@@ -97,6 +97,27 @@
 
 }
 
+/* FORM */
+
+form {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
 /* MEDIA QUERIES*/
 
   @media(max-width:1024px){
@@ -122,5 +143,20 @@
       margin: 16px 0;
     } .nav-menu.active{
       left: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    form {
+      max-width: 100%;
+      padding: 0 2rem;
+    }
+  
+    label, input {
+      width: 100%;
+    }
+  
+    input[type="submit"] {
+      margin-top: 1rem;
     }
   }

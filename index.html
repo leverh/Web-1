@@ -156,17 +156,26 @@
         </section>
 
         <section id="kontakt-form">
-            <div class="form-wrapper">
-                <form action="#" class="signup-form" method="POST">
-                <h2 class="form-header">Melde Dich </h2>
-        
-                <label for="fname">Vorname</label>
-                <input type="text" id="fname" class="text-input" name="first-name" required>
-                <label for="lname">Nachname</label>
-                <input type="text" id="lname" class="text-input" name="last-name" required>
-                <label for="email">E-mail</label>
-                <input type="text" id="email" class="text-input" name="email_address" required>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+           
+            <form>
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" required>
+                
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" name="nachname" required>
+                
+                <label for="telefonnummer">Telefonnummer:</label>
+                <input type="tel" id="telefonnummer" name="telefonnummer" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nachricht">Nachricht:</label>
+  <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+                
+                <input type="submit" value="Submit">
+              </form>
+              
         
 
         </section>
