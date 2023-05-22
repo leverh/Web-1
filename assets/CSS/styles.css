@@ -164,6 +164,71 @@
 
 /* ABOUT ME SECTION */
 
+#ueber-mich {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.ueber-mich-texte {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ueber-mich-texte p {
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+
+.text-a {
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-b {
+  grid-column: 3 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-c {
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-d {
+  grid-column: 3 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orig-details p{
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.academics {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ausbildung h3 {
+  margin-bottom: 2rem;
+}
+.ausbildung ul li{
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
 /* FORM */
 
 form {
