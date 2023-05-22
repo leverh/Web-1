@@ -208,6 +208,17 @@
   align-items: center;
 }
 
+.mid-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.mid-cont img {
+  max-height: 80rem;
+}
+
 .orig-details p{
   margin-bottom: 3rem;
   font-size: 1.5rem;
@@ -218,7 +229,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .ausbildung h3 {
