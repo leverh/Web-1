@@ -238,6 +238,19 @@ img {
 #beratung {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.beratung-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+/* WHAT CUSTOMERS SAY SECTION */
+
+.what-customers-say {
+  display: none; 
+  /* to be added at a later date*/
 }
 
 
