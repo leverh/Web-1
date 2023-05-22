@@ -16,6 +16,7 @@
     font-family: 'Arimo', sans-serif;
     color: #545454;
     font-weight: 300;
+    background-color: #f8f9e9;
   }
 
 /* RE-USABLE STUFF */
@@ -26,7 +27,7 @@
     color: #545454;
 }
 
-/* HEADER */
+/* HEADER SECTION */
 
   header{
     background-color: #f8f9e9;
@@ -40,9 +41,8 @@
   }
 
   a{
-    color: white;
     text-decoration: none;
-    color: #545454;
+    color: #3A6B35;
     font-size: 1.5rem;
   }
 
@@ -61,6 +61,7 @@
 
   .nav-branding{
     font-size: 2rem;
+    color: #3A6B35;
   }
 
   .nav-menu{
@@ -68,6 +69,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 6rem;
+  }
+
+  .nav-menu {
+    background-color: #f8f9e9;
   }
 
   .nav-link{
@@ -90,19 +95,74 @@
     margin: .5rem auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background-color: white;
+    background-color: #3A6B35;
   }
 
-/*  */
+/* HERO SECTION */
 
 #hero {
     margin-top: 7rem;
 }
 
 .hero-image {
-    height: 70rem;
+  height: 50rem;
+  margin-left: 20%;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-cont {
+  position: relative;
+}
+
+.quote-text {
+  grid-column: 1 / span 2;
+  font-size: 1.5rem;
+}
+
+.quote-text h3:before { 
+  content: open-quote;
+  font-weight: bold;
+  font-size: 10rem;
+  color:#000;
+} 
+.quote-text span:before { 
+  content: close-quote;
+  font-weight: bold;
+  font-size: 10rem;
+  color:#000;
 
 }
+
+.quote-text span {
+  font-size: 1.3rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.hero-text h3 {
+  font-size: 3rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  font-size: 2rem;
+  max-width: 70%;
+}
+
+/* ABOUT ME SECTION */
 
 /* FORM */
 
@@ -118,12 +178,16 @@ label, input {
 
 input[type="submit"] {
   margin-top: 2rem;
-  background-color: #4CAF50;
+  background-color: #3A6B35;
   color: white;
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
 }
+
+/* ABOUT ME */
+
+
 
 /* MEDIA QUERIES*/
 
