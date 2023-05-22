@@ -229,6 +229,19 @@
   font-size: 1.5rem;
 }
 
+/* PAARBERTUNG SECTION */
+
+img {
+  max-width: 40%;
+}
+
+#beratung {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 /* FORM */
 
 form {
