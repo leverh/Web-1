@@ -16,7 +16,7 @@
     font-family: 'Arimo', sans-serif;
     color: #545454;
     font-weight: 300;
-    background-color: #f8f9e9;
+    background-color: #f9f9f2;
   }
 
 /* RE-USABLE STUFF */
@@ -60,7 +60,7 @@
   }
 
   .nav-branding{
-    font-size: 2rem;
+    font-size: 3rem;
     color: #3A6B35;
   }
 
@@ -138,74 +138,102 @@
 }
 
 .hero-image {
-  height: 50rem;
-  margin-left: 20%;
-  border-top-left-radius: 40%;
-  border-top-right-radius: 40%;
+  margin-left: 25%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  max-width: 60rem;
 }
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .main-cont {
   position: relative;
+  grid-column: 1 / span 2;
+  grid-row: 1;
 }
 
 .quote-text {
-  grid-column: 1 / span 2;
+  margin-left: 40rem;
   font-size: 1.5rem;
+  max-width: 50rem;
+  text-align: center;
+  line-height: 3rem;
 }
 
 .quote-text h3:before { 
   content: open-quote;
   font-weight: bold;
-  font-size: 10rem;
+  font-size: 3rem;
   color:#000;
+  margin-right: 1rem;
 } 
 .quote-text span:before { 
   content: close-quote;
   font-weight: bold;
-  font-size: 10rem;
+  font-size: 3rem;
   color:#000;
 
 }
 
 .quote-text span {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 7rem;
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  z-index: 10;
+  color: #000;
+  margin-top: 3rem;
+  
 }
 
-.hero-text h3 {
-  font-size: 3rem;
+.hero-text h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-left: 45rem;
+  line-height: 3.7rem;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
+  color: #000;
+  margin-left: 20rem;
+}
+
+.hero-text h1 span {
+  font-size: 4rem;
 }
 
 .hero-text p {
   font-size: 2rem;
   max-width: 70%;
+  margin-left: 45rem;
+}
+
+.hero-text h2 {
+  color: #000;
 }
 
 /* ABOUT ME SECTION */
 
-#ueber-mich {
+/*#ueber-mich {
   margin-bottom: 5rem;
   margin-top: 5rem;
+  background-color: #FAE7A5;
 }
 
 .ueber-mich-texte {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-bottom: 7rem;
 }
 
 .ueber-mich-texte p {
@@ -221,7 +249,7 @@
 }
 
 .text-b {
-  grid-column: 3 / span 1;
+  grid-column: 4 / span 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,7 +263,7 @@
 }
 
 .text-d {
-  grid-column: 3 / span 1;
+  grid-column: 4 / span 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,11 +299,68 @@
 .ausbildung ul li{
   margin-bottom: 2rem;
   font-size: 1.5rem;
+}*/
+
+#ueber-mich {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". text-a stand stand"
+    ". text-b stand stand"
+    ". text-c stand stand"
+    ". text-d stand stand"
+    ". academics stand stand"
+    ". academics stand stand"; 
+
+  margin-top: 10rem;
+  background-color: #FAE7A5;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
+
+
+.text-a {
+   grid-area: text-a; 
+   align-self: start;
+   font-size: 2rem;
+  }
+
+.text-b {
+  place-self: center;
+  grid-area: text-b;
+  font-size: 2rem; 
+}
+.text-c {
+   grid-area: text-c;
+   place-self: center; 
+   font-size: 2rem;
+  }
+
+.text-d {
+   grid-area: text-d; 
+   place-self: center;
+   font-size: 2rem;
+  }
+
+.academics {
+   grid-area: academics;
+   font-size: 2rem;
+  }
+
+.stand {
+   grid-area: stand;
+   max-height: 100rem; 
+  }
+
+
+  
+
 
 /* PAARBERTUNG SECTION */
 
-img {
+#beratung img {
   max-width: 40%;
 }
 
