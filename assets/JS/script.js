@@ -57,3 +57,47 @@ form.addEventListener("submit", function (e) {
       }, 5000);
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var cookieMessage = document.getElementById("cookie-message");
+  var acceptButton = document.getElementById("cookie-accept");
+  var declineButton = document.getElementById("cookie-decline");
+
+  acceptButton.addEventListener("click", function() {
+    cookieMessage.style.display = "none";
+    // Handle cookie acceptance
+    // Store preference or take necessary action
+    enableTrackingCookies();
+    showConfirmationMessage("You have accepted cookies. Thank you!", "accept");
+  });
+
+  declineButton.addEventListener("click", function() {
+    cookieMessage.style.display = "none";
+    // Handle cookie decline
+    // Take necessary action, e.g., disabling tracking or non-essential cookies
+    disableTrackingCookies();
+    showConfirmationMessage("You have declined cookies. Some features may be limited.", "decline");
+  });
+
+  cookieMessage.style.display = "block";
+});
+
+function enableTrackingCookies() {
+  // Enable or load tracking cookies
+  document.cookie = "trackingEnabled=true; path=/;";
+}
+
+function disableTrackingCookies() {
+  // Disable or block tracking cookies
+  // Example: Remove or block cookies named "trackingEnabled" and "analyticsCookie"
+  document.cookie = "trackingEnabled=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  // Additional code to block scripts associated with tracking or non-essential cookies
+}
+
+function showConfirmationMessage(message, type) {
+  var confirmationMessage = document.getElementById("confirmation-message");
+  confirmationMessage.innerText = message;
+  confirmationMessage.style.display = "block";
+  confirmationMessage.classList.add(type);
+}
