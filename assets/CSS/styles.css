@@ -137,14 +137,19 @@
 
 #hero {
     margin-top: 7rem;
+    padding-bottom: 5rem;
 }
 
 .hero-image {
   margin-left: 25%;
   /*border-top-left-radius: 30%;
   border-top-right-radius: 30%;*/
-  border-radius: 99%;
+  /*border-radius: 99%;*/
   max-width: 60rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 4px 7px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 4px 7px -4px rgba(0,0,0,0.75);
+  box-shadow: 2px 4px 7px -4px rgba(0,0,0,0.75);
 }
 
 .hero-container {
@@ -203,7 +208,7 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
   z-index: 10;
   color: #545454;
   margin-top: 3rem;
-  
+  text-align: center;
 }
 
 .hero-text h2 {
@@ -230,7 +235,7 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
 .hero-text p {
   font-size: 2.2rem;
   max-width: 70%;
-  margin-left: 45rem;
+  margin-left: 40rem;
   text-align: center;
 }
 
@@ -285,6 +290,10 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
 .stand {
    grid-area: stand;
    max-height: 130rem; 
+   border-radius: 4px;
+   -webkit-box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
+box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
   }
 
 .orig-details h4 {
@@ -342,12 +351,16 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
 .room {
   grid-area: room;
   place-self: center;
-  max-width: 75rem;
+  max-width: 92rem;
+  margin-left: 30rem;
+  -webkit-box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
+box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
 }
 
 .beratung-cont {
   grid-area: beratung-cont;
-  margin-left: 4rem;
+  margin-left: 20rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -357,11 +370,14 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
   text-align: center;
   max-width: 50rem;
   padding: 4rem 2rem;
+  border-radius: 4px;
+  opacity: 0.9;
 }
 
 .box h3 {
   font-size: 3rem;
   text-align: center;
+  font-weight: 600;
 }
 
 .box h4 {
@@ -375,6 +391,7 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 .paar {
@@ -400,6 +417,30 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
   width: 80%;
 }
 
+.social {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.social i {
+  font-size: 4.7rem;
+  color: #545454;
+}
+
+.social li {
+  list-style: none;
+}
+
+#cookie-message {
+  margin: 20rem;
+}
+
 footer {
   padding-bottom: 7rem;
 }
@@ -418,6 +459,7 @@ footer {
 form {
   max-width: 40rem;
   margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 label, input {
