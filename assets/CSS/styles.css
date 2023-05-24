@@ -19,6 +19,15 @@
     background-color: #f9f9f2;
   }
 
+  /* FONT SIZES 
+  H1 - 3rem
+  H2 - 2.2rem
+  H3 - 3rem
+  H4 - 2.5rem
+  P - 2.2rem
+  */
+
+
 /* RE-USABLE STUFF */
 
   h1, h2, h3 {
@@ -171,7 +180,7 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
 
 .quote-text {
   margin-left: 50rem;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   max-width: 40rem;
   text-align: center;
   line-height: 3rem;
@@ -182,7 +191,7 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
 .quote-text h3:before { 
   content: open-quote;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem;
   color:#545454;
   margin-right: .5rem;
 } 
@@ -190,7 +199,7 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
 .quote-text span:before { 
   content: close-quote;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem;
   color:#545454;
 }
 
@@ -208,35 +217,33 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
   z-index: 10;
   color: #545454;
   margin-top: 3rem;
-  text-align: center;
-}
-
-.hero-text h2 {
-  font-size: 2.2rem;
-  color: #545454;
-  margin-left: 40rem;
-  line-height: 3.7rem;
 }
 
 .hero-text h1 {
   font-size: 3rem;
   color: #545454;
-  margin-left: 40rem;
+  margin-left: 45rem;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
 }
 
 .hero-text h1 span {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-right: 2rem;
-  font-style: italic;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  color: #545454;
+  margin-left: 45rem;
+  line-height: 3.7rem;
 }
 
 .hero-text p {
   font-size: 2.2rem;
   max-width: 70%;
-  margin-left: 40rem;
-  text-align: center;
+  margin-left: 45rem;
+  text-align: justify;
 }
 
 /* ABOUT ME SECTION */
@@ -253,43 +260,46 @@ clip-path: polygon(25% 49%, 45% 75%, 78% 31%, 42% 24%, 47% 49%, 71% 57%, 22% 68%
     ". ausbildung ausbildung stand stand .";
   
   background-color: #FAE7A5;
-  
+  margin-bottom: 5rem;
 }
 
 
 .text-a {
    grid-area: text-a;
    margin-top: 5rem; 
-   font-size: 1.9rem;
+   font-size: 2.2rem;
    margin-right: 3rem;
   }
 
 .text-b {
   margin-top: 5rem;
   grid-area: text-b;
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   margin-right: 3rem;
 }
 .text-c {
    grid-area: text-c;
-   font-size: 1.9rem;
+   font-size: 2.2rem;
    margin-right: 3rem;
+   margin-top: -10rem;
   }
 
 .text-d {
    grid-area: text-d; 
-   font-size: 1.9rem;
+   font-size: 2.2rem;
    margin-right: 3rem;
+   margin-top: -10rem;
   }
 
 .academics {
    grid-area: ausbildung;
    font-size: 2rem;
+   margin-bottom: 8rem;
   }
 
 .stand {
    grid-area: stand;
-   max-height: 130rem; 
+   max-height: 170rem; 
    border-radius: 4px;
    -webkit-box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
 -moz-box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
@@ -297,16 +307,18 @@ box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
   }
 
 .orig-details h4 {
-  margin-bottom: 2rem;
-  margin-top: -5rem;
-  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+  margin-top: -10rem;
+  font-size: 2.5rem;
   font-weight: 600;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .orig-details p {
-  font-weight: 300;
+  font-size: 2.2;
   margin-bottom: 5rem;
+  margin-right: 3rem;
 }
 
 .ausbildung {
@@ -337,7 +349,7 @@ box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
 /* BERTUNG SECTION */
 
 #beratung {
-  display: grid; 
+  /*display: grid; 
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
@@ -345,39 +357,76 @@ box-shadow: 2px 0px 7px -4px rgba(0,0,0,0.75);
   grid-template-areas: 
     ". room room room beratung-cont beratung-cont beratung-cont ."
     ". room room room beratung-cont beratung-cont beratung-cont ."; 
-  margin-top: 7rem;
+  margin-top: 7rem;*/
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  /*grid-template-rows: 0.4fr 1.6fr; */
+  gap: 0px 0%; 
+  grid-template-areas: 
+    "kostenfrei kostenfrei"
+    "room beratung-cont";
 }
 
 .room {
-  grid-area: room;
+  /*grid-area: room;
   place-self: center;
   max-width: 92rem;
   margin-left: 30rem;
   -webkit-box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
 -moz-box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
+box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);*/
+max-width: 90%;
+-webkit-box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
 box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
+margin-left: 4rem;
 }
 
 .beratung-cont {
   grid-area: beratung-cont;
+  
+  /*
   margin-left: 20rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3rem;*/
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.kostenfrei  {
+  max-width: 50rem;
+  grid-area: kostenfrei;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  background-color: #e7e7cb;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.kostenfrei h3 {
+  font-size: 2.5rem;
+  text-transform: none;
 }
 
 .box {
   text-align: center;
-  max-width: 50rem;
+  max-width: 37rem;
   padding: 4rem 2rem;
   border-radius: 4px;
   opacity: 0.9;
+  justify-self: center;
 }
 
 .box h3 {
   font-size: 3rem;
   text-align: center;
   font-weight: 600;
+  
 }
 
 .box h4 {
@@ -400,14 +449,6 @@ box-shadow: -2px 3px 7px -4px rgba(0,0,0,0.75);
 
 .einzel {
   background-color: #FAE7A5;
-}
-
-.kostenfrei  {
-  max-width: 50rem;
-}
-
-.kostenfrei h3 {
-  font-size: 2.5rem;
 }
 
 .divider {
@@ -458,8 +499,7 @@ footer {
 
 form {
   max-width: 40rem;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 label, input {
@@ -474,6 +514,50 @@ input[type="submit"] {
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
+}
+.flex {
+  background-color: inherit;
+}
+.flex h1 {
+  color: #545454;
+}
+.flex p, label  {
+  color: #545454;
+  font-size: 2.2rem;
+}
+form p:last-of-type {
+  font-size: 18px;
+  color: #33272a;
+  font-weight: 500;
+}
+form button {
+  background: inherit;
+  color: #545454;
+  font-weight: 500;
+  font-size: 2.2rem;
+  padding: .6rem 1.5rem;
+  border-radius: .5rem;
+  border: .1rem solid #545454;
+  margin-top: 2rem;
+}
+
+form button {
+  transition: 0.3s ease-out;
+}
+
+form button:hover {
+  background: dodgerblue;
+  border: none;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+  body > div.flex > div > div {
+      width: 320px;
+      padding: 1rem 0.25rem;
+  }
 }
 
 
